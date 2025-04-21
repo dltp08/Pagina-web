@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulario de Pedido</title>
+  <link rel="stylesheet" href="form.css">
+  <script defer src="form.js"></script>
+</head>
+<body>
+  <h2>Hacer un Pedido</h2>
+  <form id="pedidoForm">
+    <label>Nombre:
+      <input type="text" id="nombre" required>
+    </label><br>
+    
+    <label>Email:
+      <input type="email" id="email" required>
+    </label><br>
+    
+    <label>Producto:
+      <select id="producto" required>
+        <option value="">Selecciona uno</option>
+        <option value="camisa">Camisa</option>
+        <option value="pantalon">Pantalón</option>
+        <option value="chaqueta">Chaqueta</option>
+      </select>
+    </label><br>
+    
+    <label>Cantidad:
+      <input type="number" id="cantidad" min="1" required>
+    </label><br>
+    
+    <button type="submit">Enviar Pedido</button>
+  </form>
+</body>
+</html>
